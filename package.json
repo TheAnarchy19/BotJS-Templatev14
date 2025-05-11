@@ -1,0 +1,32 @@
+{
+  "name": "discordjs-advanced-template",
+  "version": "1.0.0",
+  "description": "Una plantilla modular y escalable para bots de Discord desarrollada con Discord.js. Incluye un sistema estructurado de manejo de comandos y eventos, archivos de configuración y soporte para integración con bases de datos. Ideal para desarrolladores que deseen comenzar con una base organizada y funcional.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheAnarchy19/discordjs-advanced-template.git"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "discord.js",
+    "bot",
+    "bot-template",
+    "modular",
+    "handler",
+    "estructura-bot",
+    "musica",
+    "moderacion",
+    "spanish"
+  ],
+  "author": "TheAnarchy19.oficial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheAnarchy19/discordjs-advanced-template/issues"
+  },
+  "homepage": "https://github.com/TheAnarchy19/discordjs-advanced-template#readme"
+}
