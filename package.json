@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/TheAnarchy19/discordjs-advanced-template/issues"
   },
-  "homepage": "https://github.com/TheAnarchy19/discordjs-advanced-template#readme"
+  "homepage": "https://github.com/TheAnarchy19/discordjs-advanced-template#readme",
+  "dependencies": {
+    "discord.js": "^14.19.3"
+  }
 }
