@@ -5,21 +5,21 @@
  */
 const client = new Client({
     intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildInvites,
-        GatewayIntentBits.MessageContent,
-        GatewayIntentBits.GuildMembers,
-        GatewayIntentBits.GuildPresences,
-        GatewayIntentBits.DirectMessages,
-        GatewayIntentBits.GuildVoiceStates,
-        GatewayIntentBits.GuildEmojisAndStickers,
-        GatewayIntentBits.GuildMessageReactions,
-        GatewayIntentBits.GuildModeration, // Para eventos de bans/timeouts
-        GatewayIntentBits.GuildWebhooks,   // Para eventos de webhooks
-        GatewayIntentBits.GuildScheduledEvents // Para eventos programados
+        GatewayIntentBits.Guilds,                    // Acceso a eventos generales del servidor (nombre, región, etc.)
+        GatewayIntentBits.GuildMessages,             // Leer mensajes enviados en canales del servidor
+        GatewayIntentBits.GuildInvites,              // Detectar creación o eliminación de invitaciones
+        GatewayIntentBits.MessageContent,            // Leer el contenido de los mensajes (requerido desde intents v2)
+        GatewayIntentBits.GuildMembers,              // Acceder a miembros del servidor (requerido para ver usuarios)
+        GatewayIntentBits.GuildPresences,            // Ver el estado de presencia (en línea, ausente, etc.)
+        GatewayIntentBits.DirectMessages,            // Escuchar mensajes directos enviados al bot
+        GatewayIntentBits.GuildVoiceStates,          // Detectar cambios en canales de voz (entradas/salidas, muteos, etc.)
+        GatewayIntentBits.GuildEmojisAndStickers,    // Acceder a eventos relacionados con emojis y stickers
+        GatewayIntentBits.GuildMessageReactions,     // Detectar reacciones agregadas o eliminadas a mensajes
+        GatewayIntentBits.GuildModeration,           // Detectar acciones moderativas como bans, timeouts, etc.
+        GatewayIntentBits.GuildWebhooks,             // Detectar cambios o actividades en webhooks del servidor
+        GatewayIntentBits.GuildScheduledEvents       // Escuchar eventos programados del servidor
     ]
-});    
+});  
 
 
 /**
