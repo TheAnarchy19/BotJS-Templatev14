@@ -3,10 +3,19 @@
  * Llamando a módulos
  * ================================
  */
-const {Client, GatewayIntentBits, Events} = require('discord.js');
-const dotenv = require('dotenv');
-const fs = require('fs');
+const figlet = require("figlet");
+const colors = require("colors");
+const os = require("os");
+require('events').EventEmitter.defaultMaxListeners = 50;
 require('dotenv').config();
+// Monitor de memoria (arriba del todo, después de los requires)
+//console.log("Uso de memoria:", process.memoryUsage());
+const axios = require('axios');
+const path = require('path');
+const fs = require('fs');
+const { Client, GatewayIntentBits, Events } = require('discord.js');
+const WebSocket = require("ws");
+const heapdump = require('heapdump');
 
 
 /**
@@ -112,12 +121,12 @@ const startBot = async () => {
         client.on('ready', () => {
             console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + `✅ Bot iniciado como ${client.user.tag}`.yellow);
 
-            require('./utils/server');
-            console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "🌐 Servidor web iniciado".blue);
+            //require('./utils/server');
+            //console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "🌐 Servidor web iniciado".blue);
         });
 
         // Iniciar sesión
-        await client.login(process.env.BOT_TOKEN);
+        await client.login(process.env.Bot_Token);
         console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "✅ BOT_TOKEN ha sido validado".green);
 
     } catch (error) {
