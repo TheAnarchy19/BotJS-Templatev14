@@ -1,6 +1,7 @@
 module.exports = {
   bot: {
     name: "BotHandler v14",
+    prefix: process.env.Pefix || "",
     clientid: "",  // Este es el ID del cliente de Discord
     description: "",  // Una descripción del bot
     topgg: "https://top.gg/bot/",
