@@ -54,6 +54,18 @@ module.exports = (client, prefixCommands, commandAliases, logger) => {
             timeStamps.set(message.author.id, currentTime);
             cooldowns.set(commandName, timeStamps);
         }
+        if (command.premium) {
+            const member = await message.guild.members.fetch(message.author.id).catch(() => null);
+            const hasPremiumRole = member?.roles.cache.has(config.server.premiumRoleID);
+
+            if (!hasPremiumRole) {
+                return message.reply({ 
+                    content: '🔐 Este comando es solo para usuarios con el rol **Premium**.\n' +
+                            `Contacta a un administrador para obtenerlo.`,
+                    ephemeral: true 
+                });
+            }
+        }
 
         // Solo para propietario
         if (command.ownerOnly && message.author.id !== config.ownerInfo.ownerID) {

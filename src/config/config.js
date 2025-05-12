@@ -4,8 +4,8 @@ module.exports = {
      =========================== */
   bot: {
     name: "BotHandler v14",
-    prefix: process.env.PREFIX || "!", // Prefijo por defecto
-    token: process.env.TOKEN || "", // Token del bot (OBLIGATORIO, usa .env)
+    prefix: process.env.Prefix || "!", // Prefijo por defecto
+    token: process.env.Bot_Token || "", // Token del bot (OBLIGATORIO, usa .env)
     guildId: "ID_DEL_SERVIDOR", // ID de tu servidor
     clientId: "ID_DEL_BOT", // ID de la aplicación en Discord Dev Portal
     embedColors: {

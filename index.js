@@ -109,31 +109,30 @@ const loadFilesRecursively = async (dir, type) => {
 const startBot = async () => {
     try {
         // 1. Cargar todos los handlers normales primero
-        await loadFilesRecursively(path.join(__dirname, "./src/handlers"), "⚙️ Handler");
+        await loadFilesRecursively(path.join(__dirname, "./src/handlers"), "⚙️ Cargando Handlers");
         
         // 2. Cargar todos los eventos después
-        await loadFilesRecursively(path.join(__dirname, "./src/events"), "📣 Event");
-        console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "✅ Todos los eventos han sido cargados".yellow);
-
-        // 3. Eliminar la carga del premium handler, ya no es necesario
-
-        // Configurar evento ready
+        await loadFilesRecursively(path.join(__dirname, "./src/events"), "📣 Cargando Eventos");
+        console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "✅ Todos los eventos han sido cargados correctamente".yellow);
+        
         client.on('ready', () => {
-            console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + `✅ Bot iniciado como ${client.user.tag}`.yellow);
-
-            //require('./utils/server');
-            //console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "🌐 Servidor web iniciado".blue);
+            console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + `✅ Bot iniciado exitosamente como `.yellow+`${client.user.tag}`.cyan);
+            
+            // Descomentar para iniciar el servidor web
+            // require('./utils/server');
+            // console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "🌐 Servidor web iniciado".blue);
         });
 
         // Iniciar sesión
-        await client.login(process.env.Bot_Token);
-        console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "✅ BOT_TOKEN ha sido validado".green);
+        await client.login(config.bot.token);
+        console.log(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + "✅ TOKEN del bot ha sido validado y la conexión establecida".green);
 
     } catch (error) {
-        console.error(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + '❌ Error crítico:'.red, error);
+        console.error(colors.bold.red(`${config.bot.name} ⌯ `) + "»".cyan + " " + '❌ Error crítico durante la inicialización:'.red, error);
         process.exit(1);
     }
 };
+
 
 // Iniciar todo
 startBot();
