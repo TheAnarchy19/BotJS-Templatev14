@@ -1,6 +1,6 @@
 module.exports = {
     bot: {
-        name: "Bot-Themplate",
+        name: "BotJS-Templatev14",
         ClientID: process.env.CLIENTID || "",
         prefix: process.env.PREFIX || "!",
     },

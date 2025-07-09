@@ -1,7 +1,5 @@
-No hay problema, aquí tienes el `README.md` completo con tu información integrada y listo para copiar y pegar:
-
 ````markdown
-# 🤖 Discord.js Advanced Template
+# 🤖 Bot.js Templatev14
 
 *Plantilla modular para bots de Discord con arquitectura escalable y sistema de carga dinámica* [![Discord.js](https://img.shields.io/badge/Discord.js-v14-%237289DA?logo=discord)](https://discord.js.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-%23339933?logo=node.js)](https://nodejs.org/)
@@ -32,8 +30,8 @@ Plantilla profesional para bots de Discord con:
 ### 🔧 Instalación
 ```bash
 # 1. Clonar repositorio
-git clone [https://github.com/tu-usuario/discordjs-advanced-template.git](https://github.com/tu-usuario/discordjs-advanced-template.git)
-cd discordjs-advanced-template
+git clone https://github.com/TheAnarchy19/BotJS-Templatev14.git
+cd BotJS-Templatev14
 
 # 2. Instalar dependencias
 npm install
@@ -127,7 +125,7 @@ module.exports = {
 
   - [Discord.js Guide](https://discordjs.guide/)
   - [Configuración de Intents](https://discordjs.guide/popular-topics/intents.html)
-  - [Ejemplos oficiales](https://github.com/discordjs/examples)
+  - [Ejemplos oficiales](https://github.com/topics/discord-js-bot)
 
 -----
 
