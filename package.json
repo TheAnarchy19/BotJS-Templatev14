@@ -1,5 +1,5 @@
 {
-  "name": "discordjs-advanced-template",
+  "name": "discordjs-template",
   "version": "1.0.0",
   "description": "Una plantilla modular y escalable para bots de Discord desarrollada con Discord.js. Incluye un sistema estructurado de manejo de comandos y eventos, archivos de configuración y soporte para integración con bases de datos. Ideal para desarrolladores que deseen comenzar con una base organizada y funcional.",
   "main": "index.js",
@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.0",
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
 }
