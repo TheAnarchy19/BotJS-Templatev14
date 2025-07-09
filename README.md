@@ -1,4 +1,4 @@
-````markdown
+
 # 🤖 Bot.js Templatev14
 
 *Plantilla modular para bots de Discord con arquitectura escalable y sistema de carga dinámica* [![Discord.js](https://img.shields.io/badge/Discord.js-v14-%237289DA?logo=discord)](https://discord.js.org/)
@@ -6,8 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ![Banner del Proyecto](https://via.placeholder.com/800x200/2C2F33/7289DA?text=Discord.js+Advanced+Template)
-
----
+````markdown
 
 ## 📌 Descripción
 Plantilla profesional para bots de Discord con:
